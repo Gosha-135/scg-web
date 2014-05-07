@@ -177,6 +177,17 @@ GwfObjectPair.prototype.buildObject = function (args) {
     target.update();
     edge.update();
 
+    //checking for what element arc is belong for SCp-templates
+    if(this.attributes['idtf'] == "SCpNode"){
+        scene.appendSelection(edge);
+        GwfObjectInfoReader.setNodesForTemplates(edge);
+    }
+
+    if(this.attributes['idtf'] == "SCpEdge"){
+        scene.appendSelection(edge);
+        GwfObjectInfoReader.setArcsForTemplates(edge);
+    }
+
     return edge;
 }
 
@@ -296,6 +307,10 @@ GwfObjectBus.prototype.buildObject = function (args) {
 
     scene.appendBus(bus);
     bus.update();
+
+    ScgObjectBuilder.points_scp_node_bus[0] = parseFloat(this.attributes["e_x"]) - 30;
+    ScgObjectBuilder.points_scp_node_bus[1] = parseFloat(this.attributes["e_y"]) + GwfObjectController.getYOffset();
+
     return bus;
 }
 

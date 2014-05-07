@@ -7,10 +7,6 @@ import sys
 import os
 
 sources = [
-        'gwf-file-loader.js',
-        'gwf-model-objects.js',
-        'gwf-object-info-reader.js',
-        'scg-object-builder.js',
         'scg.js',
         'scg-debug.js',
         'scg-math.js',
@@ -21,7 +17,6 @@ sources = [
         'scg-scene.js',
         'scg-layout.js',
         'scg-component.js'
-
         ]
 
 def create_file(source_dir, target_file_path):

@@ -1,6 +1,6 @@
 <div class="scg-tools-panel">
     <div class="btn-group-vertical" data-toggle="buttons">
-        
+
         <label id="scg-tool-select" class="btn btn-default" title="sc.g-node creation mode">
             <input type="radio" name="options" id="option1"> <img src="static/components/images/scg/tool-select.png"/> </input>
         </label>
@@ -13,11 +13,14 @@
         <label id="scg-tool-contour" class="btn btn-default" title="sc.g-contour creation mode">
             <input type="radio" name="options" id="option1"> <img src="static/components/images/scg/tool-contour.png"/> </input>
         </label>
+        <label id="scg-tool-choose-procedure"  class="btn btn-default" title="Choose SCp-procedure">
+            <input type="radio" name="options" id="option1"><img src="static/components/images/scg/tool-choose-constr.jpg"/></input>
+        </label>
     </div>
     <hr/>
     <div class="btn-group-vertical">
-        <button id="scg-tool-change-idtf" type="button" class="btn btn-default" title="Change identifier" data-title="Change identifier" 
-                data-content="<div class='input-group'><input id='scg-change-idtf-input' class='form-control pull-left' value=''/> <div class='input-group-btn'><button type='button' id='scg-change-idtf-apply' class='btn btn-success'><span class='glyphicon glyphicon-ok-sign'/></button><button type='button' id='scg-change-idtf-cancel' class='btn btn-danger'><span class='glyphicon glyphicon-remove-sign'/></button></div></div>" 
+        <button id="scg-tool-change-idtf" type="button" class="btn btn-default" title="Change identifier" data-title="Change identifier"
+                data-content="<div class='input-group'><input id='scg-change-idtf-input' class='form-control pull-left' value=''/> <div class='input-group-btn'><button type='button' id='scg-change-idtf-apply' class='btn btn-success'><span class='glyphicon glyphicon-ok-sign'/></button><button type='button' id='scg-change-idtf-cancel' class='btn btn-danger'><span class='glyphicon glyphicon-remove-sign'/></button></div></div>"
                 data-html="true" data-placement="right" data-toggle="popover">
             <img src="static/components/images/scg/tool-change-idtf.png"/>
         </button>
@@ -35,9 +38,19 @@
         </button>
 
         <div id="scg-tool-open" type="button" class="btn btn-default" title="Open">
-            <input id="scg-tool-open-dialog" type="file" style="visibility: hidden; position: absolute;">
+            <input id="scg-tool-open-dialog" type="file" style="visibility: hidden; position: absolute;" >
             <img style="width: 30px" src="static/components/images/scg/tool-open.png"/>
         </div>
 
+        <div id="scg-tool-alignment" type="button" class="btn btn-default" title="Grid alignment">
+            <img style="width: 30px" src="static/components/images/scg/tool-alignment.jpg"/>
+        </div>
+
+        <div id="scg-tool-undo" type="button" class="btn btn-default" title="Undo">
+            <img style="width: 30px" src="static/components/images/scg/undo.png"/>
+        </div>
+        <div id="scg-tool-redo" type="button" class="btn btn-default" title="Redo">
+            <img style="width: 30px" src="static/components/images/scg/redo.png"/>
+        </div>
     </div>
 </div>

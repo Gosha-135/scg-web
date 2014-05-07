@@ -133,12 +133,6 @@
     fill: #D60011;
 }
 
-.SCgContourAcceptPoint {
-    stroke: #FBF4F2;
-    stroke-width: 3px;
-    fill: #33BB33;
-}
-
 .SCgDragLinePointHighlighted {
     fill: #FF3300;
     stroke: #FFBE52;

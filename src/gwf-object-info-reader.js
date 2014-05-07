@@ -2,6 +2,8 @@ GwfObjectInfoReader = {
 
     objects_info: { },
     errors: [],
+    arcsForTemplate: [],
+    nodesForTemplate: [],
 
     gwf_type_to_scg_type: {
         "node/-/not_define": sc_type_node,
@@ -150,7 +152,7 @@ GwfObjectInfoReader = {
         var parsed_bus = new GwfObjectBus(null);
 
         if (parsed_bus.parseObject({gwf_object: bus, reader: this}) == false)
-                    return false;
+            return false;
         this.objects_info[parsed_bus.id] = parsed_bus;
     },
 
@@ -191,5 +193,21 @@ GwfObjectInfoReader = {
 
     getTypeCode: function (gfw_type) {
         return this.gwf_type_to_scg_type[gfw_type];
+    } ,
+
+    getArcsForTemplates: function(){
+        return this.arcsForTemplate;
+    },
+
+    setArcsForTemplates: function(arc){
+        this.arcsForTemplate.push(arc);
+    },
+
+    getNodesForTemplates: function(){
+        return this.nodesForTemplate;
+    },
+
+    setNodesForTemplates: function(arc){
+        this.nodesForTemplate.push(arc);
     }
 }

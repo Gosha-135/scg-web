@@ -1,1 +1,1 @@
-"c:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files
+"C:\Users\User\AppData\Local\Google\Chrome\Application\chrome.exe" --allow-file-access-from-files

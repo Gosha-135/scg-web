@@ -4,7 +4,6 @@ var sc_type_link            = 0x2
 var sc_type_edge_common     = 0x4
 var sc_type_arc_common      = 0x8
 var sc_type_arc_access      = 0x10
-var sc_type_contour         = 0x16
 
 // sc-element constant
 var sc_type_const           = 0x20
