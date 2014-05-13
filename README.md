@@ -1,4 +1,6 @@
-scg-web
+sc-web-components
 =======
 
-Web implementation of scg tools
+Web implementation of UI components for sc-web
+
+
